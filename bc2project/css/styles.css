@@ -1,0 +1,133 @@
+body, html{
+    width: 100%;
+    min-height: auto;
+}
+
+body{
+    background-image: url("../img/pattern2a.jpg");
+    background-repeat: repeat;
+}
+
+main{
+    height: 100%;
+    background-color: rgba(255, 252, 252, 0.71);
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+#container{
+    background-color: rgba(255, 252, 252, 0.71);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+header img{
+    width: 100%;
+    
+    border-radius: 3px;
+}
+
+nav{
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+    width: 100%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+nav li{
+    font-size: 1.9vw;
+}
+
+nav ul{
+    width: 100%;
+}
+
+nav li a img{
+    display: block;
+    width: 100%;
+}
+
+article{
+    background-color: rgba(255, 252, 252, 0.71);
+    color: rgb(60, 60, 60);
+    font-family: 'Lora', serif;
+    width: 70%;
+    float: left;
+}
+
+article img{
+    width: 100%;
+}
+
+aside{
+    background-color: rgba(255, 252, 252, 0.71);
+    color: rgb(60, 60, 60);
+    font-family: 'Lora', serif;
+    width: 30%;
+    float: left;
+    padding: 20px;
+}
+
+aside img{
+    width: 100%;
+}
+
+
+#soc{
+    
+    width: 100%;
+    padding: 8%;
+}
+
+#soc img{
+    width: 30%; 
+    overflow: hidden;
+    display: inline-block;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.33);
+    padding: 10px 10px 10px 0;
+    clear: both;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  
+}
+
+footer p{
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+}
+
+.container-fluid{
+    
+    border-radius: 2px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px){
+    article{
+        clear: both;
+        width: 100%;
+    }
+    
+    aside{
+        clear: both;
+        width: 100%;
+    }
+    
+    nav li a img{
+        display: none;
+    }
+    
+    
+}

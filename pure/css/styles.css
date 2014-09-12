@@ -1,0 +1,19 @@
+header{
+    background-color: grey;
+}
+
+article{
+    background-color: blue;
+}
+
+aside{
+    background-color: green;
+}
+
+footer{
+    background-color: yellow;
+}
+
+p{
+    background-color: red;
+}

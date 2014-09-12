@@ -1,0 +1,183 @@
+/* Flex box */
+
+
+header, article, aside, footer {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* */
+
+ins{
+	text-decoration: none;
+}
+
+del{
+	text-decoration: line-through;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear:before, .clear:after{
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+*, *:before, *:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}	
+
+
+
+/* Media Queries */
+
+/* @media (min-width: 768px){
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1200px){
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        background-color: green;
+    }
+} */
+
+body{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+        height: 150px;
+        background-color: gray;
+
+    }
+
+    article{
+        width: 60%;
+        height: 250px;
+        float: left;
+        background-color: yellow;
+    }
+
+    aside{
+        width: 40%;
+        height: 250px;
+        float: left;
+        background-color: blue;
+    }
+
+    .feature {
+        height: 200px;
+        float: left;
+        width: 25%;
+        background-color: green;
+        border: 1px solid black;
+    }
+
+    footer {
+        clear: both;
+        background-color: red;
+        width: 100%;
+        height: 50px;
+    }
+
+
+@media (max-width: 1199px){
+    .feature{
+        width: 50%;
+    }
+    aside{
+        float: right;
+    }
+    article{
+        float: right;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        width: 100%;
+        clear: both;
+    }
+    .feature{
+        clear: both;
+        width: 100%;
+        height: 75px;
+        float: left;
+    }
+    aside{
+        width: 100%;
+        height: 150px;
+        float: left;
+    }
+    article{
+        width: 100%;
+        float: left;
+        height: 150px;
+    }
+    
+}

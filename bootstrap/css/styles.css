@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* body */
+
+body{
+    min-width: 1000px; 
+    max-height: 1500px;
+    background-color: #c9c9c9
+}
+
+
+/* nav styles */
+
+header{
+    font-family: 'Armata', sans-serif;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* main */
+
+main{
+    font-family: 'Arimo', sans-serif;
+    width: 85%;
+    height: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    float: right;
+    word-wrap: break-word;
+    
+    
+}
+
+main p{
+    text-indent: 30px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    color: #5d5d5d;
+}
+
+main img{
+    border-radius: 10px;
+    position: relative;
+    left: 10%;
+    border: 5px solid black;
+    margin-bottom: 10px;
+}
+    
+footer p{
+    clear: both;
+    position: relative;
+}    
+
+aside{
+  
+    height: 100%;
+    width: 8%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    float: right;
+
+}
+
+/* jumbotron */
+
+.jumbotron{
+    background-image: url("../img/Tron.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.jumbotron p{
+    line-height: 35px;
+    width: 60%;
+    text-indent: 30px;
+
+}
+
+/* media queries */
+
+@media (max-width: 1199px){
+    aside{
+        clear: both;
+        float: left;
+        margin-left: 15%;
+        font-size: 50px;
+    }
+    main{
+        clear: both;
+    }
+}
+    
+
+@media (max-width: 768px){
+    main{
+        clear: both;
+    }
+    aside{
+        font-size: 50px;
+    }
+}
+
+
+
