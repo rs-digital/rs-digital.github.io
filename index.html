@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>usps</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<img width="200px" src="img/logo.png" />
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About Us</li>
+				<li>Products</li>
+				<li>Contact Us</li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	
+	<main>
+		<div id="hero">
+		    <div id="sizr">
+		        <button class="plus">+</button>
+		        <button class="minus">-</button>
+		    </div>
+		    
+		</div>
+		<section class="clear">
+			<img src="img/avatar.png" />
+			
+			<article>
+				<h1>Greetings,</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris libero, consequat sit amet sapien vel, luctus malesuada lacus. Proin porttitor sagittis mauris, vel rutrum mi ullamcorper sit amet. Sed fringilla tellus nec mauris dictum egestas. Integer blandit metus sit amet arcu condimentum bibendum. Ut vel sapien scelerisque, commodo nunc nec, molestie erat. Mauris ipsum eros, viverra vel orci ut, ullamcorper facilisis nisi. Mauris odio risus, blandit sit amet dignissim in, suscipit id leo. Donec facilisis purus felis, quis tempus risus placerat at. Nullam in lacus id mauris aliquam luctus. Duis sollicitudin dapibus risus et vestibulum.</p>
+				<p>Vivamus at nisi malesuada, sollicitudin mi id, egestas quam. Cras dignissim porttitor lorem, id hendrerit lorem aliquam at. Nunc ac ante ligula. Praesent hendrerit ac lacus sit amet blandit. Vivamus dignissim, sem id pellentesque dictum, ipsum mauris sollicitudin ligula, pharetra luctus tortor ligula sit amet ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<h2>Matthew Higley</h2>
+			</article>
+		</section>	
+	</main>
+	<footer>
+		<p>Copyright &copy; 2014 Geekwise Academy. All rights reserved.</p>
+	</footer>
+	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	
+	<script>
+	$(document).ready(function(){
+        
+        var size = 100;
+        
+        $("#sizr button").on({
+            click: function(){
+                console.log($(this));
+                if($(this).hasClass("plus")){
+                        console.log("clicked the plus");
+                        size = size + 10; 
+                        $("body").css("font-size", size + "%");
+                    }else{
+                        console.log("clicked the minus");
+                        size = size - 10;
+                        $("body").css("font-size", size + "%");
+                    }
+            }
+        });
+    });
+	</script>
+</body>
+</html>
