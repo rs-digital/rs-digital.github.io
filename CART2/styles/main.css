@@ -1,0 +1,305 @@
+/* Reset Styles */
+body, div, h1, h2, h3, p, ol{
+	margin: 0;
+	padding: 0;
+}
+
+/* Tag Rules */
+body{
+	background-color: #000;
+	font-family: 'Lobster', cursive;
+}
+
+
+/* Frame Styles */
+#Wrapper{
+	background-color: #ccc;
+	min-height: 500px;
+	width: 800px;
+	margin: 0 auto;
+}
+header{
+	background-color: red;
+	min-height: 200px;
+	width: 100%;
+	background: url("http://www.step2digital.com/wp-content/uploads/2014/01/ccove_capture2.jpg");
+	background-size: 100%;
+	background-position: 0 -100px;
+}
+header h1 a{
+	background: url("../images/site-sprites.png") no-repeat;
+	background-position: 0 -475px;
+	height: 100px;
+	width: 200px;
+	display: block;
+	text-indent: -9999px;
+	position: relative;
+
+}
+#MainContent{
+	background-color: yellow;
+	width: 78%;
+	min-height: 400px;
+	float: right;
+	padding-left: 2%;
+}
+#MainContent article{
+	background-color: #FF7700;
+	min-height: 400px;
+	width: 48%;
+	float: left;
+	margin: 2% 2% 2% 0;
+}
+aside{
+	background-color: blue;
+	min-height: 400px;
+	width: 20%;
+	float: right;
+}
+footer{
+	background-color: purple;
+	min-height: 100px;
+	width: 100%;
+}
+
+article img{
+	width: 100%;
+}
+
+/* classes */
+.clear{
+	clear: both;
+}
+
+/* Nav styles */
+nav{
+
+}
+nav ul{
+
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+nav ul li a{
+	color: white;
+	background-color: black;
+	padding: 20px 40px;
+	display: inline-block;
+	border-left: 2px solid white;
+}
+nav ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+/* Sub Nav Styles */
+nav ul ul{
+	position: absolute;
+	top:59px;
+	left:-9999px;
+	padding: 0;
+}
+nav ul li:hover ul{
+	left:0;
+	animation: fadeIn 0.5s;
+	-webkit-animation: fadeIn 0.5s;
+}
+nav ul ul li{
+	float: none;
+	
+}
+nav ul ul a{
+	width: 150px;
+}
+
+footer ul li{
+	list-style: none;
+	float: left;
+}
+
+footer ul li a{
+	background: url("../images/site-sprites.png");
+	height: 83px;
+	width: 84px;
+	display: block;
+	text-indent: -9999px;
+}
+
+footer ul li:first-child a{
+	background-position: 0 0;
+}
+
+footer ul li:first-child a:hover{
+	background-position: 0 -84px;
+}
+
+footer ul li:nth-child(2) a{
+	background-position: -336px 0;
+}
+
+footer ul li:nth-child(2) a:hover{
+	background-position: -336px -84px;
+}
+
+footer ul li:nth-child(3) a{
+	background-position: -672px 0;
+}
+
+footer ul li:nth-child(3) a:hover{
+	background-position: -672px -84px;
+}
+
+.gradient{
+	background: orange url("../images/site-sprites.png") repeat-x !important;
+	background-position: 0 -800px !important;
+}
+
+/* Animation Keyframes */
+
+@keyframes spinCycle{
+	from{
+		left: 1000px;
+	}
+	to{
+		left: 0;
+	}
+	from{
+		transform: rotate(1080deg);
+	}
+	to{
+		transform: rotate(0);
+	}
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+/* Responsive Stlyes */
+
+@media screen and (max-width: 800px){
+	#Wrapper{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#MainContent article{
+		width: 98%;
+	}
+}
+
+@media screen and (max-width: 475px){
+	#MainContent{
+		width: 98%;
+	}
+	aside{
+		width: 96%;
+		margin-right: 2%;
+
+	}
+
+	/* Verticle Nav Styles */
+
+	nav ul{
+		padding: 0;
+	}
+
+	nav ul li{
+		float: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	nav ul li a{
+		width: 100%;
+		text-align: center;
+		border-left: none;
+		border-bottom: 1px solid;
+		padding: 20px 0px;
+	}
+
+	/* Second Level Responsive Nav */
+
+	nav ul ul{
+		position: absolute;
+		top: 0;
+	}
+	nav ul li:hover ul{
+		position: relative;
+	}
+	nav ul ul a{
+		background-color: gray;
+		padding: 10px 0;
+	}
+}
+
+/* Slideshow Styles */
+
+.cycle-slideshow img{
+	width: 50%;
+}
+
+#Pager span{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	background-color: gray;
+	border-radius: 100%;
+	border: 1px solid white;
+	text-indent: -9999px;
+	margin: 0 5px; 
+	cursor: pointer;
+}
+
+#Pager .cycle-pager-active{
+	background-color: orange;
+	border: 1px solid black;
+	height: 20px;
+	width: 20px;
+}
+
+#Previous, #Next{
+	cursor: pointer;
+}
+
+/* Table Styles */
+
+table{
+	border: 2px solid black;
+}
+
+table thead tr th{
+	border-bottom: 1px solid black;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+}
+
+table tbody tr{
+	color: white;
+	background-color: gray;
+}
+
+table tbody tr:nth-child(odd){
+	background-color: #eee;
+	color: black;
+};

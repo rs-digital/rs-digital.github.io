@@ -1,0 +1,237 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #e2e2e2;
+    background-image: url("../img/wolf_rsd_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    background-position: center;  
+}
+
+header{
+    margin-top: 0px;
+    margin: auto;
+    background-color: #FEFEFE;
+    width: 100%;
+}
+
+div.panel-heading{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#headLeft{
+    float: left;
+}
+
+#headRight{
+    float: right;
+    font-size: 11px;
+}
+
+.panel{
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+header div.panel-body{
+    margin: auto;
+    background-color: #FEFEFE;
+    width: 100%;
+    text-align: center;
+}
+
+header div.panel-default{
+    margin: 0 auto;
+    border-radius: 0px;
+    background-color: #FEFEFE;
+    width: 100%;
+    text-align: center;
+}
+
+
+nav{
+    margin: 0 auto;
+    background-color: #FEFEFE;
+    width: 100%;
+    text-align: center;
+}
+
+.nav li{
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.nav{
+   
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+}
+
+div ul.navbar-nav{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav.navbar-default{
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+nav.navbar{
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.navbar .inner-nav ul{
+    position: relative;
+    left:50%; 
+    float: left;
+    margin-right: 0;
+    margin-left: 0; 
+}
+
+.navbar .inner-nav li{
+    position: relative;
+    right: 50%;
+    float: left;
+    margin: 0;
+    list-style: none;  
+}
+
+div.container-fluid{
+    margin: auto;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+}
+
+div.content{
+    padding: 0;
+    background-color: rgba(159, 159, 159, 0.65);
+    color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+div.content p{
+    padding: 15px;   
+    margin: 0;
+}
+
+div.panel-body{
+    bottom: 0;
+    height: 70px;
+    border-radius: 0px;
+    background-color: #FEFEFE;
+    width: 100%;
+}
+
+/*image size*/
+div.carousel-inner{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#carousel-example-generic.carousel.slide{
+    width: 95%;
+    height: 90%;
+    margin: auto;
+}
+
+div.item img{
+    margin: auto;
+    margin-top: 3%;
+}
+
+#page1{
+    width: 40%;
+}
+
+a img{
+    margin-top: 150%;
+}
+
+
+footer{
+    font-size: 10px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255, 252, 252, 0.48);
+    margin-left: 10px;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 500px){
+    div.panel-heading{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (max-width: 790px){
+    .navbar .inner-nav ul{
+    float: none;
+    clear: both;
+    margin-right: 0;
+    margin-left: 0;
+    width: 120px;
+    z-index: 1;    
+    
+}
+
+    .navbar .inner-nav li{
+    float: none;
+    clear: both;
+    margin: 0; 
+    z-index: 1;
+    
+}
+    div.collapse navbar-collapse{
+    float: none;
+    clear: both;
+    z-index: 1;
+}
+    div.content{
+    margin-top: 275px;
+    z-index: -1;
+    }
+    
+    #page1{
+    width: 90%;
+    }
+    
+    nav.navbar-default{
+    z-index: 1;
+}
+    #headRight{
+    margin-left: 20px;
+    }
+    
+}

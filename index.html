@@ -3,142 +3,717 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BonBon's Bakery</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!--Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    
+     <!-- bootstrap and jquery scripts--> 
+     <!--   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    -->
+    <script src="linksAndStyles/bootstrap-java.js"></script>
+    <script src="linksAndStyles/jquery.js"></script>
+    
+    <!--
+    <link rel="stylesheet"       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    -->
+    <link rel="stylesheet" href="linksAndStyles/bootstrap.css">
+    <link rel="stylesheet" href="linksAndStyles/bootstrap-theme.css">
+    <!--
+    <link rel="stylesheet" href="styles/reset.css"> -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
+   
+    
+    <title>Ryan Schmidt. Designer. Developer.</title>
     
 </head>
 
 <body>
    
-    <main>   
-        <header><a href="index.html"><img src="img/hero1a.jpg"></a></header>
-
-
-        <nav class="navbar navbar-default" role="navigation">
-              <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a><img src="img/sep.png"></a></li>
-                    <li><a href="cake.html">Cupcakes & Cake</a></li>
-                    <li><a><img src="img/sep.png"></a></li>
-                    <li><a href="cookies.html">Cookies</a></li>
-                    <li><a><img src="img/sep.png"></a></li>
-                    <li><a href="pastries.html">Pastries</a></li>
-                    <li><a><img src="img/sep.png"></a></li>
-                    <li><a href="#candy">Candy</a></li>
-                    <li><a><img src="img/sep.png"></a></li>
-                    
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Stuff <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li class="divider"></li>
-                        <li><a href="rentals.html">Rentals</a></li>
-                        <li class="divider"></li>
-                        <li><a href="order.html">Order Here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <!--<form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>-->
-                  
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-      </nav>
-
-     <div id="container">
-     
-      <article>
-        Located in the heart of California, Bonbon's Bakery is a "Class A" Cottage Food bakery that specializes in custom cakes, cupcakes, cookies, and pastries. We use the highest quality ingredients available - fresh eggs, real butter, whole milk, cane sugar, unbleached cake flour, Madagascar bourbon vanilla, and sea salt. Real ingredients, real taste, real good!
-        <br><br>
-        <img src="img/real.jpg">
-        <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur, minima nulla hic, sunt id harum dolorum iure corporis sapiente a in reiciendis fuga, quia enim ad odit ipsum earum!
-        <br><br>
-        <img src="img/hello.jpg">
-        <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At obcaecati labore numquam magnam commodi recusandae magni odio, ut voluptates sint officiis, consequatur fugit laboriosam pariatur, voluptatem voluptatum placeat tenetur eaque!
-        <br><br>
-        <img src="img/treat.jpg" alt="">
-        <br><br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae saepe officiis corporis illum maxime laudantium, fugiat tenetur ducimus, molestiae placeat totam, obcaecati nihil nam. Cum, labore, ipsam. Itaque, placeat.
+    <header>
         
-      </article>
-      
-      <aside>
-      
-       <div id="soc">
-         <a href="https://www.facebook.com/bonbonsbakery" target="_blank"><img src="img/fb.png"></a>
-         <a href="http://www.pinterest.com/bonbonsbakery/" target="_blank"><img src="img/pint.png"></a>
-         <a data-toggle="modal" data-target=".bs-example-modal-sm" href="#"><img src="img/mail.png"></a>
-         
-
-
-<!-- Modal -->
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Email Address</h4>
-      </div>
-      <div class="modal-body">
-        sarahbonnar@me.com
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-         
-        </div>         
-        
-         <img src="img/aside1.jpg">
-         
-          aside
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, eius libero fugit, pariatur et nemo officiis harum minus omnis molestias eveniet error tempore aperiam adipisci sit laboriosam quasi laborum. Est!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem quas accusantium enim officiis veniam, quasi ab optio ratione beatae distinctio ipsum labore nemo, quia exercitationem perspiciatis quod hic magnam.
-          <img src="img/mickeysm.jpg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt laudantium cumque, libero odio tempore ipsam illum suscipit, ullam commodi blanditiis, numquam odit officiis eum delectus iste harum incidunt cum mollitia.
-          <img src="img/puppychow.jpg">
+        <!-- top header -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <div id="headLeft"><img src="img/diamond.png">
+              rs-digital@hotmail.com
+              </div>
+              <div id="headRight">
+               Get in touch with social media.
+                <img src="img/fb.png">
+                <img src="img/drbbl.png">
+                <img src="img/yt.png">
+                <img src="img/twtr.png"> 
+              </div>
           
-      </aside>
+        <!-- contains navbar -->            
+          </div>
+          <div class="panel-body">
+            
+            
+           <!-- Navbar -->      
+           <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <!-- nav button when collapsed-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <div class="inner-nav">
+      <ul class="nav navbar-nav">
+              <li><img src="img/floral_left.png"></li>
+              <li id="btn1" role="presentation"><a href="#">Home</a></li>
+              <li id="btn2" role="presentation"><a href="#">Graphic Art</a></li>
+              <li id="btn3" role="presentation"><a href="#">Photography</a></li>
+              <li id="btn4" role="presentation"><a href="#">Illustrations</a></li>
+              <li id="btn5" role="presentation"><a href="#">Web Development</a></li>
+              <li><img src="img/floral_right.png"></li>
+            </ul>
+            </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+       <!-- navbar end--> 
     
+          </div>
+        </div>
+        
+    </header>
+<!-- Page 1 -->
+    <div class="content" id="page1">
+        
+        <p> 
+        <img src="img/o.png">h hi there, I'm <strong>Ryan</strong>. Thanks for stoppin' by.</p>
+        <p>
+        What you should expect to find here on my page is a variety of my artistic <strong>skill</strong> and <strong>talent</strong>. I enjoy <strong>creating things</strong>. Whether it's on a computer or a piece of paper, music or 
+        coding, illustrating or just daydreaming--I always have the need to come up with 
+        something to make.</p>
+        <p> 
+        I built this page to show you a little bit of my style and medium. I am fluent in 
+        <strong>Adobe Photoshop</strong>, and pretty good with <strong>Illustrator</strong>. I also tend to use <strong>Corel Paint, Adobe Draw, Adobe Shape,</strong> and a bit of <strong>InDesign</strong> when needed.</p>
+        <p>
+        I have most recently been learning to code in <strong>HTML5, CSS, JavaScript,</strong> and a little <strong>PHP</strong>. 
+        <strong>Bootstrap</strong> and <strong>JQuery</strong> are also getting more familiar to me. It's been a great experience attending classes at <strong>BitWise Industries</strong> here in Fresno, Califonia, and I plan on learning a great deal more.
+        </p>
+        
     </div>
     
-    </main>
     
+<!-- Page 2 -->    
+    <div class="content" id="page2">
+        
+        <!--page 2 carousel -->
+           <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="9"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="10"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="11"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="12"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="13"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="14"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="15"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="16"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="17"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/gd/1.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/2.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/3.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/4.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/5.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/6.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/7.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/8.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/9.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/10.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/11.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/12.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/13.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/14.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/15.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/16.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/17.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/gd/18.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            
+            
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+            <img src="img/arrowleft.png">
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+            <img src="img/arrowright.png">
+          </a>
+        </div> <!-- end Carousel -->
+        
+        <p> I've done some work for various musical artists as well as for my own side project, RS.Digital. You'll see some other random pieces here too. </p>
+        
+    </div>
+    </div>
+<!-- Page 3 -->    
+    <div class="content" id="page3">
+        
+        <!--page 3 carousel -->
+           <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="9"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="10"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="11"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="12"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="13"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="14"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="15"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="16"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="17"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="18"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="19"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="20"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="21"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="22"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/photos/1.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/2.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/3.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/4.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/5.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/6.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/7.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/8.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/9.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/10.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/11.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/12.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/13.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/14.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/15.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/16.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/17.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/18.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/19.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/20.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/21.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/22.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photos/23.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+            <img src="img/arrowleft.png">
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+            <img src="img/arrowright.png">
+          </a>
+        </div> <!-- end Carousel -->
+        
+        <p> The photos you see here range from when I first started snapping away with my Rebel, up until just recently. People, animals, nature, cars-- I try and capture it all. </p>
+        
+    </div>
+    </div>
+<!-- Page 4 -->    
+    <div class="content" id="page4">
+        
+        <!--page 4 carousel -->
+           <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="9"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="10"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="11"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="12"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="13"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="14"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="15"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="16"></li>
+            <li data-target="#carousel-example-generic2" data-slide-to="17"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="18"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="19"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="20"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="21"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="22"></li>
+            <li data-target="#carousel-example-generic3" data-slide-to="23"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/illus/1.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/2.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/3.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/4.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/5.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/6.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/7.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/8.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/9.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/10.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/11.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/12.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/13.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/14.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/15.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/16.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/17.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/18.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/19.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/20.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/21.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/22.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/illus/23.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+             <div class="item">
+              <img src="img/illus/24.jpg" alt="...">
+              <div class="carousel-caption">
+                  <h3></h3>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+            <img src="img/arrowleft.png">
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+            <img src="img/arrowright.png">
+          </a>
+        </div> <!-- end Carousel -->
+        
+        <p> Most of these digital drawings come from two fantasty-style games (one created by me, and one that wasn't).</p>
+        
+    </div>
+    </div>
+<!-- Page 5 -->    
+    <div class="content" id="page5">
+        
+        <p> I currently don't have a ton to show on this area, but the page you are looking at right now was built by me. Nothing too fancy, just a simple, clean site that is easy to navigate and nice to look at.</p>
+        <p> Here are a couple other small projects from GeekWise bootcamp <a href="http://rs-digital.github.io/CARTproject/index.html" target="_blank">1</a> and <a href="http://http://rs-digital.github.io/bakery/index.html" target="_blank">2</a>.</p>
+        <p>
+            If you would like to view some other code that I've written, check out my <a href="https://github.com/rs-digital" target="_blank">GitHub</a> page. 
+        </p>
+        
+    </div>
+    </div>
+    
+    
+<!-- Dropdown page controls-->
+    <script>
+        $(document).ready(function(){
+            
+            $('#page1').hide();
+            $('#btn1').on('click', function() {
+                $('#page2, #page3, #page4, #page5').hide();
+                $('#page1').slideToggle(1000);
+            });
+            
+            $('#page2').hide();
+            $('#btn2').on('click', function() {
+                $('#page1, #page3, #page4, #page5').hide();
+                $('#page2').slideToggle(1000);
+            });
+            
+            $('#page3').hide();
+            $('#btn3').on('click', function() {
+                $('#page1, #page2, #page4, #page5').hide();
+                $('#page3').slideToggle(1000);
+            });
+            
+            $('#page4').hide();
+            $('#btn4').on('click', function() {
+                $('#page1, #page2, #page3, #page5').hide();
+                $('#page4').slideToggle(1000);
+            });
+            
+            $('#page5').hide();
+            $('#btn5').on('click', function() {
+                $('#page1, #page2, #page3, #page4').hide();
+                $('#page5').slideToggle(1000);
+            });
+            
+        });
+    </script>
+      
+      
+    <!-- slides page up when menu button is toggled-->  
+    <script>
+        $(document).ready(function(){
+            
+            $('.collapsed').on('click', function() {
+                $('.content').slideUp(400);
+            });
+            
+        });
+    </script>
+       
+       
+        
 </body>
 
-<footer>
-    <p>&copy; Bonbon's Bakery 2014 All rights reserved.</p>
+<footer>Copyright 2015, Ryan Schmidt
+    <!-- bootstrap and jquery scripts--> 
+    <!--   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    -->
+    <script src="linksAndStyles/bootstrap-java.js"></script>
+    <script src="linksAndStyles/jquery.js"></script>
+    
 </footer>
-
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </html>

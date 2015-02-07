@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Site</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="Wrapper">
+		<header>
+			<h1><a href="index.htm">My Example Site</a></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Go Home!">Home</a></li>
+					<li>
+						<a href="about.html" title="More about this site.">About</a>
+						<ul>
+							<li><a href="#" title="About me.">Me</a></li>
+							<li><a href="#" title="About you.">You</a></li>
+							<li><a href="#" title="About this site.">This Site</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html" title="Please don't.">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="MainContent">
+
+			<audio controls>
+			  <source src="horse.ogg" type="audio/ogg">
+			  <source src="horse.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio> 
+
+			<table>
+				<thead>
+					<tr>
+						<th>Employee ID</th>
+						<th>Employee Name</th>
+						<th>Employee Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Fin the Human</td>
+						<td>fin@ooo.com</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ian Malcom</td>
+						<td>goldblum@chaos.com</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Marty McFly</td>
+						<td>back@intime.com</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+			<form action="mail.php" method="POST">
+				<label for="firstName">First Name</label>
+				<input id="firstName" type="text" name="FirstName">
+				<br />
+				<label for="date">Date</label>
+				<input id="date" name="Date" type="date">
+				<br />
+				<label for="favoritePet">Choose a pet</label>
+				<select name="FavoritePet" id="favoritePet">
+					<option>Cat</option>
+					<option>Dog</option>
+					<option>T-Rex</option>
+				</select>
+				<br />
+				Choose your colors.
+				<br />
+				Red<input type="checkbox" name="Colors" value="red">,
+				Green<input type="checkbox" name="Colors" value="green">,
+				Blue<input type="checkbox" name="Colors" value="blue">
+
+				<br />
+				Choose your numbers.
+				<br />
+				09<input type="checkbox" name="Numbers" value="09">,
+				12<input type="checkbox" name="Numbers" value="12">,
+				82<input type="checkbox" name="Numbers" value="82">
+
+				<br>
+				Choose one.
+				<br>
+				Pizza<input type="radio" name="Food" value="pizza">,
+				Tacos<input type="radio" name="Food" value="tacos">,
+				BACON!<input type="radio" name="Food" value="bacon">
+
+				<br>
+
+				<input type="submit" value="Submit!">
+
+			</form>
+
+
+
+
+			<div class="cycle-slideshow"
+				data-cycle-fx="scrollHorz"
+				data-cycle-speed="100"
+				data-cycle-timeout="0"
+				data-cycle-prev="#Previous"
+				data-cycle-next="#Next"
+				data-cycle-pager="#Pager"
+			>
+			    <img src="http://malsup.github.io/images/p1.jpg">
+			    <img src="http://malsup.github.io/images/p2.jpg">
+			    <img src="http://malsup.github.io/images/p3.jpg">
+			    <img src="http://malsup.github.io/images/p4.jpg">
+			</div>
+
+			<div class="pagerControls">
+				<div id="Previous"><p>Prev</p></div>
+				<div id="Next"><p>Next</p></div>
+				<div id="Pager"></div>
+			</div>
+
+
+
+			<article class="gradient">
+				<h2>I'm on a Boat!</h2>
+				<p>It's going fast and...</p>
+				<img src="http://www.step2digital.com/wp-content/uploads/2014/02/wlLakeMotion-720x340.jpg" alt="Um... It's a boat.">
+			</article>
+			<article></article>
+		</div>
+		<aside>
+			
+		</aside>
+		<div class="clear"></div>
+		<footer>
+			<ul>
+				<li><a href="#" title="Facebook">Facebook</a></li>
+				<li><a href="#" title="Linked In">Linked In</a></li>
+				<li><a href="#" title="Twitter">Twitter</a></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
